@@ -1,8 +1,20 @@
 <template>
   <mapbox
-    :access-token="accessToken "
+    :access-token="accessToken"
     :map-options="mapOptions"
-  ></mapbox>
+    :geolocate-control="{
+    show: true,
+    position: 'top-left'
+  }"
+  :scale-control="{
+    show: true,
+    position: 'top-left'
+  }"
+  :fullscreen-control="{
+    show: true,
+    position: 'top-left'
+  }">
+  </mapbox>
 </template>
 
 <script>
@@ -13,7 +25,9 @@
       return {
         accessToken: 'pk.eyJ1IjoiY29yeWhzbWl0aCIsImEiOiJjamNiOWl3MWYwcWdtMzJsbG5mcG50a2gxIn0.Za3kNsNlJ6KVLKIioK1hsQ',
         mapOptions: {
-          style: 'mapbox://styles/mapbox/outdoors-v10'
+          style: 'mapbox://styles/mapbox/outdoors-v10',
+          center: [-149.9, 61.15],
+          zoom: 11
         }
       }
     }
@@ -22,7 +36,9 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-#map {
+  @import 'https://api.tiles.mapbox.com/mapbox-gl-js/v0.43.0/mapbox-gl.css';
+
+  #map {
   width: 100%;
   height: 500px;
 }
