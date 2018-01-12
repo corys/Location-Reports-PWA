@@ -6,28 +6,6 @@
       <router-view></router-view>
     </div>
 
-    <div id="footer" class="navbar navbar-inverse navbar-fixed-bottom">
-    	<div class="row">
-    		<div class="col-xs-6">
-    			<a href="rss" target="_blank" class="navbar-link-icon" title="RSS Feed">
-    				<img src="/images/rss.png" />
-    			</a>
-
-    			<a href="http://www.facebook.com/pages/Alaska-Outdoor-Reports/403998892672" target="_blank" class="navbar-link-icon" title="Like us on Facebook">
-    				<img src="/images/facebook.png"/>
-    			</a>
-
-    			<a href="http://www.twitter.com/akoutdoor" target="_blank" class="navbar-link-icon" title="Follow us on Twitter">
-  					<img src="/images/twitter.png"/>
-  	      </a>
-    		</div>
-    		<div class="col-xs-6 text-right">
-    			<a class="navbar-link-icon" data-toggle="modal" data-target="#aboutModal">About</a>
-    			<a class="navbar-link-icon" data-toggle="modal" data-target="#termsModal">Terms</a>
-    		</div>
-      </div>
-    </div>
-
     <!-- About Modal -->
     <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="aboutModalLabel">
       <div class="modal-dialog" role="document">
