@@ -39,7 +39,10 @@
   @import 'https://api.tiles.mapbox.com/mapbox-gl-js/v0.43.0/mapbox-gl.css';
 
   #map {
-  width: 100%;
-  height: 500px;
+    position: fixed;
+    top: 56px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
 }
 </style>
