@@ -13,7 +13,7 @@
         <b-nav-item href="#">Terms</b-nav-item>
         <b-nav-item href="#">Subscribe</b-nav-item>
         <b-nav-item href="rss" target="_blank" title="RSS Feed">
-  				<img src="/assets/rss.png" />
+  				<img class="logo" src="/static/img/icons/rss.png" />
   			</b-nav-item>
         <b-nav-item href="http://www.facebook.com/pages/Alaska-Outdoor-Reports/403998892672" target="_blank" title="Like us on Facebook">
   				<img class="logo" src="/static/img/icons/facebook.png" />
