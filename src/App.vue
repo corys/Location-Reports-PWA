@@ -93,4 +93,9 @@ header span {
   box-sizing: border-box;
   padding-top: 16px;
 }
+
+.container-fluid {
+  padding-right: 0px;
+  padding-left: 0px;
+}
 </style>

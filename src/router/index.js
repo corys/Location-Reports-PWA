@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Map from '@/components/map'
+import Home from '@/components/home'
 
 Vue.use(Router)
 
@@ -8,8 +8,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'map',
-      component: Map
+      name: 'home',
+      component: Home
     }
   ]
 })
