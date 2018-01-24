@@ -1,22 +1,24 @@
 <template>
-  <mapbox
-    :access-token="accessToken"
-    :map-options="mapOptions"
-    :geolocate-control="{
-      show: true,
-      position: 'top-left'
-    }"
-    :scale-control="{
-      show: true,
-      position: 'top-left'
-    }"
-    :fullscreen-control="{
-      show: true,
-      position: 'top-left'
-    }"
-    @map-load="mapLoaded"
-    @map-click="mapClicked">
-  </mapbox>
+  <b-col id="map" md="6" order="1" xl="7" order-md="2">
+    <mapbox
+      :access-token="accessToken"
+      :map-options="mapOptions"
+      :geolocate-control="{
+        show: true,
+        position: 'top-left'
+      }"
+      :scale-control="{
+        show: true,
+        position: 'top-left'
+      }"
+      :fullscreen-control="{
+        show: true,
+        position: 'top-left'
+      }"
+      @map-load="mapLoaded"
+      @map-click="mapClicked">
+    </mapbox>
+  </b-col>
 </template>
 
 <script>
@@ -185,10 +187,6 @@
   @import 'https://api.tiles.mapbox.com/mapbox-gl-js/v0.43.0/mapbox-gl.css';
 
   #map {
-    position: fixed;
-    top: 56px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-}
+
+  }
 </style>

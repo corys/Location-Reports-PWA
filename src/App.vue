@@ -2,9 +2,9 @@
   <div id="app">
     <Navbar />
 
-    <div class="container-fluid">
+    <b-container fluid  id="content">
       <router-view></router-view>
-    </div>
+    </b-container>
 
     <!-- About Modal -->
     <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="aboutModalLabel">
@@ -70,6 +70,14 @@ body {
   color: #2c3e50;
 }
 
+#content {
+  position: fixed;
+  top: 56px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
 main {
   text-align: center;
   margin-top: 40px;
@@ -92,10 +100,5 @@ header span {
   font-weight: 400;
   box-sizing: border-box;
   padding-top: 16px;
-}
-
-.container-fluid {
-  padding-right: 0px;
-  padding-left: 0px;
 }
 </style>

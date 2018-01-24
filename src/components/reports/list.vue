@@ -1,12 +1,12 @@
 <template>
-  <div id="sidebar" class="col-md-6 bg-shaded">
+  <b-col class="reports" md="6" order="2" xl="5" order-md="1">
     <div id="report-add"></div>
 
     <div class="loading" v-if="loading">
       Loading...
     </div>
 
-		<div  id="report-list">
+		<div id="report-list">
   		<template v-if="reports.length">
   		  <ShowReport
   		    v-for="report in reports"
@@ -27,7 +27,7 @@
 				We couldn't find any reports that meet the search criteria.  Try expanding the date range above or using fewer keywords.
 			</div>
 		</div>
-	</div>
+  </b-col>
 </template>
 
 <script>
@@ -53,31 +53,15 @@
 </script>
 
 <style>
-.bg-shaded {
-	/* Fallback for web browsers that doesn't support RGBa */
-	background: rgb(255, 255, 255) transparent;
-	/* RGBa with 0.6 opacity */
-	background: rgba(255, 255, 255, 0.6);
-	/* For IE 5.5 - 7*/
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99FFFFFF, endColorstr=#99FFFFFF);
-	/* For IE 8*/
-	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99FFFFFF, endColorstr=#99FFFFFF)";
-}
 
-#sidebar {
-	padding-top: 10px;
-	margin-bottom: 50px;
-}
-
-/* bootstrap overrides */
-#sidebar h3 {
-	margin-top: 0px;
-}
 
 /* mods for short wide screens */
 @media all and (max-height: 900px){
 	 #sidebar {
 		padding: 5px;
+	 }
+	 .reports {
+  	 overflow: auto;
 	 }
  }
 </style>

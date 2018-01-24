@@ -61,7 +61,7 @@
 @media all and (max-height: 900px){
 
  /* bootstrap overrides */
- #sidebar h3 {
+ h3 {
 	margin-bottom: 5px;
 	font-size: 20px;
  }
