@@ -62,6 +62,8 @@
 	 }
 	 .reports {
   	 overflow: auto;
+  	 padding-top: 5px;
+  	 padding-right: 10px;
 	 }
  }
 </style>

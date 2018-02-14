@@ -54,7 +54,7 @@
             }
           }
         })
-        console.log(features)
+        // console.log(features)
         map.addLayer({
           'id': 'points',
           'type': 'circle',
@@ -187,6 +187,6 @@
   @import 'https://api.tiles.mapbox.com/mapbox-gl-js/v0.43.0/mapbox-gl.css';
 
   #map {
-
+    padding: 0px;
   }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <b-row no-gutters={true}>
+  <b-row>
     <ReportList />
     <Map v-if="mapVisible" />
   </b-row>

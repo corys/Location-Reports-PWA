@@ -15,7 +15,7 @@
             <h4 class="modal-title" id="aboutModalLabel">About This Site</h4>
           </div>
           <div class="modal-body">
-            <p><a href="http://www.resdat.com" target="_blank"><img src="images/rdi_logo_sm.gif" align="right" border="0"></a> The Alaska Outdoor Reports website is a community of outdoor enthusiasts who share information about the areas where they recreate.  Thank you very much to everyone who takes the time to post reports.  You are what makes this site so great! </p>
+            <p><a href="http://www.resdat.com" target="_blank"><img src="/static/img/rdi_logo_sm.gif" align="right" border="0"></a> The Alaska Outdoor Reports website is a community of outdoor enthusiasts who share information about the areas where they recreate.  Thank you very much to everyone who takes the time to post reports.  You are what makes this site so great! </p>
             <p>The Alaska Outdoor Reports are developed and maintained by Cory Smith, out of his desire to always know where the best skiing is.  Special thanks to <a href="http://www.resdat.com" target="_blank">Resource Data, Inc.</a> for contributing to this project.</p>
             <p>If you have any questions, or are interested in having the Reports on your website, <a href="http://akoutdoor.tumblr.com" target="_blank">check our admittedly meager help section</a> for more information and/or contact info.</p>
             <p>Thanks for visiting!</p>
@@ -100,5 +100,10 @@ header span {
   font-weight: 400;
   box-sizing: border-box;
   padding-top: 16px;
+}
+
+.container-fluid {
+  padding-right: 5px;
+  padding-left: 5px;
 }
 </style>
