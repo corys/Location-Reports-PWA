@@ -16,7 +16,7 @@
 			  </template>
       </small>
 		</h3>
-    {{ report }}
+    <span v-html="report"></span>
 		<template v-if="sourceTypeId == 'TRACK'">
 			{{ authorName }} was out grooming.
 			<div class="visible-xs visible-sm">
