@@ -9,11 +9,11 @@ export default {
   },
   actions: {
     get ({ commit }) {
-      fetch('http://www.snowio.com/api/reports?records=52')
+      fetch('http://dev.snowio.com/api/reports?records=50')
         .then((response) => {
           return response.json()
         }).then((json) => {
-          console.log('fetch success', json)
+          // console.log('fetch success', json)
           commit('SET_REPORTS', json)
         }).catch((ex) => {
           console.log('fetch failed', ex)
